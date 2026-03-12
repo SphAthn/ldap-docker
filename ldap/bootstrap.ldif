@@ -1,0 +1,117 @@
+# admin user
+dn: cn=admin,dc=hopital,dc=local
+changetype: add
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+userPassword: adminpassword
+description: LDAP Administrator
+
+# admin user
+dn: cn=admin1,dc=hopital,dc=local
+changetype: add
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin1
+userPassword: adminpassword
+description: LDAP Administrator
+
+# organisational unit for Admins department
+dn: ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: organizationalUnit
+ou: Admins
+
+# user: peterschmidt for unit Admins department
+dn: uid=peterschmidt,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: Peter Schmidt
+sn: Schmidt
+uid: peterschmidt
+mail: peter.schmidt@example.org
+userPassword: password789
+
+# user: openemr for unit Admins department
+dn: uid=openemr,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: OpenEMR Service
+sn: Service
+uid: openemr
+userPassword: strongpassword
+description: Compte de service OpenEMR
+
+# user: kimai for unit Admins department
+dn: uid=kimai,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: Kimai Service
+sn: Service
+uid: kimai
+userPassword: strongpassword
+description: Compte de service Kimai
+
+
+# organisational unit for Medecins department
+dn: ou=Medecins,dc=hopital,dc=local
+changetype: add
+objectClass: organizationalUnit
+ou: Medecins
+
+# user: John Doe for unit Medecins department
+dn: uid=johndoe,ou=Medecins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: John Doe
+sn: Doe
+uid: johndoe
+mail: johndoe@example.org
+userPassword: password123
+
+# user: Anna Meier for unit Medecins department
+dn: uid=annameier,ou=Medecins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: Anna Meier
+sn: Meier
+uid: annameier
+mail: anna.meier@example.org
+userPassword: password456
+
+# organisational unit for Admins department
+dn: ou=Admins,dc=hopital,dc=local
+changetype: add  
+objectClass: organizationalUnit
+ou: Admins
+
+# user: peterschmidt for unit Admins department
+dn: uid=peterschmidt,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: Peter Schmidt
+sn: Schmidt
+uid: peterschmidt
+mail: peter.schmidt@example.org
+userPassword: password789
+
+# user: openemr for unit Admins department
+dn: uid=openemr,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: OpenEMR Service
+sn: Service
+uid: openemr
+userPassword: strongpassword
+description: Compte de service OpenEMR
+
+# user: kimai for unit Admins department
+dn: uid=kimai,ou=Admins,dc=hopital,dc=local
+changetype: add
+objectClass: inetOrgPerson
+cn: Kimai Service
+sn: Service
+uid: kimai
+userPassword: strongpassword
+description: Compte de service Kimai
+
